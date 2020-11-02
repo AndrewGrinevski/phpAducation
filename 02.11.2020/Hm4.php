@@ -32,11 +32,13 @@ for ($i = 0; $i < count($explode_string); $i++) {
 т.е. одинаково пишется как с начала, так и с конца. */
 
 echo "<br>" . "3-ье задание" . "<br>";
-$string = "Live not on evil";
-$low_string = strtolower($string);
+$string = "А муза рада музе без ума да разума";
+$low_string = mb_strtolower($string);
 $str_replace_string = str_replace(' ', '', $low_string);
-$strrev_string = strrev($str_replace_string);
-if ($str_replace_string == $strrev_string) {
+$string = iconv('utf-8', 'windows-1251', $str_replace_string);
+$string = strrev($string);
+$string = iconv('windows-1251', 'utf-8', $string);
+if ($str_replace_string == $string) {
     echo "true";
 } else {
     echo "false";
