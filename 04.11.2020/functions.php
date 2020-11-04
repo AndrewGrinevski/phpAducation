@@ -23,7 +23,6 @@ function secondTask($second_task_string)
         if (((mb_strlen($explode_string[$i]) >= 3)) && ((mb_strlen($explode_string[$i]) <= 5))) {
             $selected_words[] = $explode_string[$i];
         }
-
     }
     return $selected_words;
 }
@@ -53,7 +52,7 @@ function fourTask($four_task_string)
     $string_explode = explode(" ", $four_task_string);
     $max = $string_explode[0];
     foreach ($string_explode as $element) {
-        if (strlen($element) > strlen($max)) {
+        if (mb_strlen($element) > mb_strlen($max)) {
             $max = $element;
         }
     }
@@ -65,7 +64,7 @@ function fourTask($four_task_string)
 function fiveTask($five_task_string)
 {
     $five_task_string = preg_replace("/[\s,.]+/", "", $five_task_string);
-    $five_task_string = str_split($five_task_string);
+    $five_task_string = mb_str_split($five_task_string);
     $u = 0;
     $l = 0;
     foreach ($five_task_string as $element) {
