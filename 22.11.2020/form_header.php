@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
             <div class="post-heading">
-                <h1>Text</h1>
+                <h1>Admin page</h1>
 
             </div>
         </div>
