@@ -68,7 +68,7 @@ $url = isset($page['id']) ? '/admin/?action=update_product_page&id=' . $page['id
                                             <select name="brand" class="form-control">
                                                 <?php foreach ($brands as $brand):
                                                     $selected = '';
-                                                    if (isset($page['category']) && $page['category'] == $brand['id']) {
+                                                    if (isset($page['brand_id']) && $page['brand_id'] == $brand['id']) {
                                                         $selected = 'selected';
                                                     }
                                                     ?>
@@ -128,7 +128,7 @@ $url = isset($page['id']) ? '/admin/?action=update_product_page&id=' . $page['id
                                             <select name="category" class="form-control">
                                                 <?php foreach ($categories as $category):
                                                     $selected = '';
-                                                    if (isset($page['category']) && $page['category'] == $category['id']) {
+                                                    if (isset($page['category_id']) && $page['category_id'] == $category['id']) {
                                                         $selected = 'selected';
                                                     }
                                                     ?>

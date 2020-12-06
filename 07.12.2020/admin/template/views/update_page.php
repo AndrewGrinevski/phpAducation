@@ -6,7 +6,7 @@
     $content = $_POST['content'];
     $category = $_POST['category'];
     if (isset($_FILES) && $_FILES['page_img']['size'] > 0) {
-        $imgUrl = '/images/' . $_FILES['page_img']['name'];
+        $imgUrl = '/images/shop images/' . $_FILES['page_img']['name'];
         $stmt = mysqli_prepare($connection, "UPDATE pages SET title = ? , author = ? , content = ?, category = ?, img = ? WHERE id = ?");
         mysqli_stmt_bind_param($stmt, "sssssd", $title, $author, $content, $category, $imgUrl, $ids);
         mysqli_stmt_execute($stmt);

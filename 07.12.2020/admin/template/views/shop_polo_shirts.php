@@ -153,7 +153,7 @@ $categories = mysqli_fetch_all($resp_category, MYSQLI_ASSOC);
                                         <?php endforeach; ?>,
                                         <?php foreach ($brands as $brand): ?>
 
-                                            <a href="#"><?= $brand['brand_name'] ?></a>,
+                                            <a href="#"><?= $brand['brand_name'] ?></a>
                                         <?php endforeach; ?>
                                 </div>
                             </div>

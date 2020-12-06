@@ -4,9 +4,9 @@
     if (!empty($_POST)) {
         echo '<h4>Article uploaded successfully</h4>';
         if ($_FILES['product_img']['size'] > 0) {
-            $imgUrl = '/images/' . $_FILES['product_img']['name'];
+            $imgUrl = '/images/shop images/' . $_FILES['product_img']['name'];
             move_uploaded_file($_FILES['product_img']['tmp_name'],
-                BASE_PATH . '/../images/' . $_FILES['product_img']['name']);
+                BASE_PATH . '/../images/shop images/' . $_FILES['product_img']['name']);
         }
     }
     $brand = $_POST['brand'];

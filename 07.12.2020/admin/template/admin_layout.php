@@ -209,7 +209,7 @@
                     <ul class="children">
                         <li><a href="/admin/?action=add_page">Add page</a></li>
                         <li><a href="/admin/?action=list_page">List page</a></li>
-                        <li><a href="/admin/?action=add_product">Add product</a></li>
+                        <li><a href="/admin/?action=edit_product">Add product</a></li>
                         <li><a href="/admin/?action=product_list_page">Product list page</a></li>
                     </ul>
                 </li>
